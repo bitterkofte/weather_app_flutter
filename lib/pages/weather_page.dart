@@ -98,6 +98,12 @@ class _WeatherPageState extends State<WeatherPage> {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _fetchWeather,
+        child: Icon(Icons.refresh, color: Colors.blue[800]),
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+      ),
     );
   }
 }
